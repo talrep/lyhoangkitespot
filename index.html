@@ -17,8 +17,9 @@
     --radius: 12px;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  img, video, iframe, svg { max-width: 100%; }
   a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   body {
     font-family: 'DM Sans', 'Noto Sans Vietnamese', sans-serif;
     background: var(--sky);
@@ -150,7 +151,7 @@
   .hero-scroll svg { width:20px; opacity:.6; }
 
   /* ─── SECTION BASE ─── */
-  section { padding: 7rem 5vw; }
+  section { padding: 7rem 5vw; max-width: 100%; overflow-x: hidden; }
   .section-label {
     font-size:.75rem; text-transform:uppercase; letter-spacing:.15em;
     color:var(--teal); font-weight:600; margin-bottom:.8rem;
